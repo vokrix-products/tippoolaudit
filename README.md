@@ -23,3 +23,6 @@ Audit/monitoring product. The unit the buyer tracks is an **employee / server re
   - `details` (dict) — all fields found for that record (`employee_id`, `employee_name`, `business_date`, `tip_amount`, sales amounts, `role`, `shift_id`, `clock_in`, `clock_out`, `hours_worked`, etc.).
   - `due_date` (str|null) — ISO-8601 date, preferring `pay_period_end`, then `business_date`, then `shift_date`.
 - **Failure mode:** unprocessable input still returns a one-element list with `status: missing:critical` and the reason in `details.error` — it never raises and never returns an empty list.
+
+Dashboard: https://tippoolaudit.vokrix.co
+Vercel: tippoolaudit
